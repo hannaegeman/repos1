@@ -1,0 +1,300 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edded5;
+  width: 100vw;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+}
+
+section {
+  font: "Lato", sans-serif;
+  margin: 10%;
+}
+
+/* Initial styling for hidden sections */
+.slideIn {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Apply styles when the section is visible */
+.slideIn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#section1 {
+  opacity: 1 !important;
+}
+
+.section-center {
+  display: block;
+  text-align: center;
+}
+
+a {
+  font: "Lato", sans-serif;
+  color: #000000;
+}
+
+section.projects {
+  margin: 5%;
+}
+
+.col-md-8 {
+  padding: 1%;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    order: 1;
+  }
+  .col-md-8 {
+    order: 2;
+  }
+}
+.project-description {
+  width: 50vw;
+}
+
+.background-white, .background-white-image {
+  background-color: #f6eeea;
+  padding: 100px;
+  margin: 0px;
+}
+
+.background-white-image {
+  padding: 0px;
+  text-align: right;
+}
+
+.project {
+  font-family: "Lato", sans-serif;
+  padding: 2%;
+  display: flex;
+  flex: 0 0 50%;
+}
+.project p {
+  margin-left: 10%;
+}
+
+.image-container {
+  float: right;
+  overflow: hidden;
+  margin: 0px;
+  padding-top: 100px;
+  padding-right: 0px;
+  padding-bottom: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar-tva, .navbar-tva-finger {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-tva-finger {
+  color: #000000;
+  display: block;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: underline 1px;
+}
+
+.navbar-tva a, .navbar-tva-finger a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #edded5;
+  font-family: "lato", sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.5px;
+}
+
+.navbar-left, .navbar-left.logo {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a:hover {
+  text-decoration: underline 1px;
+  padding-bottom: 100px;
+}
+
+.navbar-right {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.navbar-tva, .navbar-tva-finger {
+  margin: 0px;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 6.25rem;
+  font-weight: 700;
+}
+
+h1.right {
+  text-align: right;
+}
+
+h2 {
+  margin: 0px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+h2.special {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  width: fit-content;
+}
+
+h2.right {
+  text-align: right;
+  display: flex;
+}
+
+h2.resume {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+h3.projects {
+  font-size: 18px;
+}
+
+h4.resume {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+
+.letsgetintouch {
+  font-family: "Lato", sans-serif;
+  font-size: 3.75rem;
+  text-decoration: none;
+}
+
+a.letsgetintouch {
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+  color: #000000;
+}
+
+.underline-font {
+  text-decoration: underline;
+}
+
+.list-item-landing {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-size: 6.25rem;
+}
+
+a.list-item-landing {
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+  color: #000000;
+}
+
+li {
+  font-family: "Lato", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+ol li:nth-child(odd) {
+  padding-left: 20%;
+}
+
+ol li:nth-child(even) {
+  padding-left: 20%;
+}
+
+section.center {
+  display: flex;
+  justify-content: center;
+}
+
+.section-background-beige {
+  margin: 0;
+  background-color: #edded5;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "lato", sans-serif;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  padding: 0px;
+  color: #000000;
+}
+
+.content {
+  text-align: left;
+  padding: 50px 30px 50px 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
